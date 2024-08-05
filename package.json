@@ -4,9 +4,10 @@
   "description": "",
   "main": "tailwind.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "postcss static/css/style.css -o static/css/tailwind.css",
-    "watch-css": "watch 'npm run build-css' static/css/"
+    "start-flask": "flask --app app.py --debug run",
+    "watch-css": "postcss static/css/style.css -o static/css/tailwind.css --watch",
+    "start": "npm-run-all --parallel start-flask watch-css"
+
   },
   "keywords": [],
   "author": "",
