@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/tailwind.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='assets/logo.png') }}" type="image/x-icon">
     <title>Quick-Flaskwind</title>
 </head>
 <body>
-    <div class="text-3xl text-blue-500 underline">Hello world</div>
+    <div class="container mx-auto flex flex-col items-center px-4 py-16 text-center md:py-32 md:px-10 lg:px-32 xl:max-w-3xl">
+        <img src="{{ url_for('static', filename='assets/logo.png') }}" alt="" class="src">
+        <div class="text-center">
+            <h1 class="text-5xl font-bold">Welcome to <span class="text-blue-600"> Quick-FlaskWind</span></h1>
+            <p class="text-lg text-gray-700 mt-2">Easily build and style your Flask applications with Tailwind CSS.</p>
+        </div>        
+    </div>
 </body>
 </html>
