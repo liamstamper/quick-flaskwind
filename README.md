@@ -3,6 +3,16 @@
 
 This template provides a pre-configured setup for a Flask application using Tailwind CSS. It features a simple set up and a single script for building Tailwind CSS, watching for changes, and running a development server.
 
+### Set Up
+run the following comands:
+```bash
+pip install -r requirements.txt
+```
+```bash
+npm install tailwindcss autoprefixer parallel
+```
+
+
 ### Running the Application
 You can start the development server and the CSS watcher with:
 ```bash
